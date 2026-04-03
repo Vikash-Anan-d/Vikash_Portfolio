@@ -6,6 +6,8 @@ import { SmoothScrollProvider } from "@/components/providers/SmoothScrollProvide
 import { Navbar } from "@/components/ui/Navbar";
 import { Footer } from "@/components/ui/Footer";
 import { CustomCursor } from "@/components/ui/CustomCursor";
+import { StarryBackground } from "@/components/ui/StarryBackground";
+import { WeatherBackground } from "@/components/ui/WeatherBackground";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +27,8 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <SmoothScrollProvider>
             <CustomCursor />
+            <StarryBackground />
+            <WeatherBackground />
             <Navbar />
             <main className="flex min-h-screen flex-col items-center justify-between w-full">
               {children}

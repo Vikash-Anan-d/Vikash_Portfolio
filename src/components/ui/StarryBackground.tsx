@@ -151,7 +151,7 @@ export const StarryBackground = () => {
       opacity: 0,
       active: false,
       color: "#ffaa00",
-      reset: function (w: number, h: number) {
+      reset: function (w: number, _h: number) {
         this.x = Math.random() * w;
         this.y = 0;
         this.length = Math.random() * 80 + 40;

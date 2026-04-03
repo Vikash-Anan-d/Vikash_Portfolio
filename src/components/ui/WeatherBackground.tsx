@@ -45,7 +45,7 @@ export const WeatherBackground = () => {
   const weatherRef = useRef<WeatherType>("RAINY");
   
   // Track opacity for smooth transitions between skies
-  const [skyOpacity] = useState({ value: 1 });
+  // Track opacity for smooth transitions between skies (Removed unused var)
 
   useEffect(() => {
     setMounted(true);
@@ -268,7 +268,7 @@ export const WeatherBackground = () => {
       const targetWeather = weatherRef.current;
 
       // Dynamic Sky Gradient
-      let bgGradient = ctx.createLinearGradient(0, 0, 0, height);
+      const bgGradient = ctx.createLinearGradient(0, 0, 0, height);
       if (targetWeather === "SUNNY") {
         bgGradient.addColorStop(0, "#87CEEB");
         bgGradient.addColorStop(1, "#f2f9ff");

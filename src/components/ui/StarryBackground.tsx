@@ -23,7 +23,7 @@ interface Meteorite {
   opacity: number;
   active: boolean;
   color: string;
-  reset: (width: number, height: number) => void;
+  reset: (width: number) => void;
 }
 
 interface Raindrop {
@@ -151,7 +151,7 @@ export const StarryBackground = () => {
       opacity: 0,
       active: false,
       color: "#ffaa00",
-      reset: function (w: number, _h: number) {
+      reset: function (w: number) {
         this.x = Math.random() * w;
         this.y = 0;
         this.length = Math.random() * 80 + 40;
@@ -248,7 +248,7 @@ export const StarryBackground = () => {
       meteoriteTimer += dt;
       if (!meteorite.active && meteoriteTimer > meteoriteInterval) {
         if (Math.random() > 0.3) {
-          meteorite.reset(width, height);
+          meteorite.reset(width);
         }
         meteoriteTimer = 0;
       }

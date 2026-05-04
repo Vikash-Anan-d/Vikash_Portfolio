@@ -27,11 +27,11 @@ export const Hero = () => {
                         Welcome to my universe
                     </motion.h2>
 
-                    <h1 className="text-6xl md:text-8xl lg:text-[7rem] font-extrabold tracking-tighter text-foreground leading-tight">
-                        Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-purple-500 to-orange-500 animate-gradient-x">Vikash Anand</span>
+                    <h1 className="text-5xl md:text-7xl lg:text-[7rem] font-extrabold tracking-tighter text-foreground leading-tight">
+                        Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-purple-500 to-orange-500 animate-gradient-x block sm:inline">Vikash Anand</span>
                     </h1>
 
-                    <div className="text-xl md:text-3xl text-gray-500 dark:text-gray-400 font-medium h-12 flex justify-center items-center">
+                    <div className="text-lg md:text-3xl text-gray-500 dark:text-gray-400 font-medium h-12 flex justify-center items-center">
                         <Typewriter
                             options={{
                                 strings: ["AI/ML Engineer", "Full Stack Developer", "Systems Enthusiast"],
